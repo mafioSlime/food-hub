@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>John Jarold | Food Hub</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="media.css">
     <script src="https://kit.fontawesome.com/c7414cb6d4.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">    
+    
 </head>
 <body>
     <header>
@@ -31,54 +34,73 @@
     </div>
     <div class="banner-title" id="about">
         <h1>Food Hub</h1>
-        <p>それを切望し、それを作ります</p>
+        <p>Crave it, make it.</p>
+        <a href="#scroll1"><i class="fas fa-arrow-circle-down fa-2x"></i></a>
     </div>
     </header>
 
-    <main>
-        <div class="main-intro">
-            <h3>What is this non-sense website I have built about?</h3>
-            <p>Hey now take it easy! I built this website 
-                for the wbdv project but I wanted to build it from 
-                the ground up while having fun. I could not think
-                of any personal content but found tons of food images that I took 
-                on my phone.    
+    <main id="scroll1">
+        <div class="main-intro" >
+            <h3>Welcome to Food Hub!</h3>
+            <p>Warning: If you are on diet or fasting, I recommend 
+               you to simply close the browser for your own good. 
+               Otherwise, proceed.
             </p>
-        </div>
-        <div class="card-container">
-        <div class="card">
-            <div class="card-img">
-                <img src="/images/table-791167_1280.jpg" alt="">
-            </div>
-            <div class="card-description">
-                <h3>Pick the right place</h3>
-                <p>It is not a bad idea to explore around downtown or that shady restaurant around the alley
-                    but to enjoy every penny you would spend for your food,
-                    make sure that you always do your research first and see what 
-                    other people's reviews! 
-                </p>
-            </div>
+            <a href="#scroll2"><i class="fas fa-arrow-circle-down fa-2x"></i></a>
         </div>
 
-        <div class="card2">
-            <div class="card-img2">
-                <img src="/images/apple-1506119_1280.jpg" alt="">
-            </div>
-            <div class="card-description2">
-                <h3>Know what you are eating</h3>
-                <p>You are what you eat! Although you are in charge of your life,
-                    be mindful of what you consume. Is it healthy? How is the sugar content
-                    on this one? 
-                </p>
-            </div>
-        </div>
-        </div>
+        <section class="grid-title" id="scroll2">
+            <p>What day do eggs hate the most? Fry-day! 
+            </p>
+            <a href="#scroll3"><i class="fas fa-arrow-circle-down fa-2x"></i></a>
+        </section>
+
     </main>
 
-    <section class="grid-title">
-        <p>This section is where you will drool
-            and yes, white space is so beautiful.
+        <section class="card-container" id="scroll3">
+            <h3 class="ct-title">Food Hub Tips!</h3>
+            <div class="main-card">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/table-791167_1280.jpg" alt="">
+                </div>
+                <div class="card-description">
+                    <h3>Pick the right place</h3>
+                    <p> Do your research first. People with either great or bad experience the most will
+                        definitely leave reviews about restaurants.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/apple-1506119_1280.jpg" alt="">
+                </div>
+                <div class="card-description">
+                    <h3>Know what you are eating</h3>
+                    <p>You are what you eat! Although you are in charge of your life,
+                        be mindful of what you consume. Is it healthy? How is the sugar content
+                        on this one? 
+                    </p>
+                </div>    
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/friends-1283173_1280.jpg" alt="">
+                </div>
+                <div class="card-description">
+                    <h3>Find food buddies</h3>
+                    <p>Eating with your squad definitely makes a huge difference when eating!
+                        This is because you get to enjoy your food and also the company of others.
+                    </p>
+                </div>
+            </div>
+            </div>
+        <a href="#scroll4"><i class="fas fa-arrow-circle-down fa-2x"></i></a>
+    </section>
+
+    <section class="grid-title" id="scroll4"> 
+        <p>What do you call a sad coffee? Depresso.
         </p>
+        <a href="#scroll5"><i class="fas fa-arrow-circle-down fa-2x"></i></a>
     </section>
 
     <section class="grid-gallery" id="gallery">
@@ -90,6 +112,13 @@
         <div class="gallery-title">
             <h3>Hungry Grid</h3>
         </div>
+    </section>
+
+    
+    <section class="grid-title">
+        <p>All my life I thought air was free... until I bought
+           a bag of chips.
+        </p>
     </section>
 
     <section class="blog" id="blog">
@@ -125,6 +154,11 @@
         </div>
     </section>
 
+    <section class="grid-title">
+        <p>What do you call a fake noodle? Impasta!
+        </p>
+    </section>
+
     <section class="email-form" id="contact">
         <div class="social-media-container">
             <h3>Connect with me</h3>
@@ -134,7 +168,7 @@
                 <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
         </div>
-        <form action="">
+        <form action="POST">
             <h3>Sign up for newsletters!</h3>
             <label for="name">Name</label>
             <input type="text" id="name">

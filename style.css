@@ -9,9 +9,9 @@ html {
 }
 
 body {
-    color: #333;
+    color: #000;
     background-color: #fafafa;
-    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -21,21 +21,14 @@ img {
 
 li {
     list-style-type: none;
-
 }
 
 a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
 header {
-    background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.6), rgba(0,0,0,0.6)),
-    url(/images/guy-160411_1280.png);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     min-height: 100vh;
     text-align: center;
     margin-bottom: 3rem;
@@ -47,19 +40,13 @@ header {
     flex-wrap: wrap;
     align-items: center;
     min-height: 15vh;
-    color: #fff;
-    background-color: rgba(0,0,0,0.6);
-}
-
-.banner-title h1 {
-    background: linear-gradient(#48d39f, #38a4d3);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: #000;  
 }
 
 .logo {
     flex: 1 1 25rem;
     margin-left: 0.3rem;
+    color: #fff;
 }
 
 .logo i {
@@ -76,15 +63,11 @@ nav {
 }
 
 .nav-links a{
-    font-size: 1.3rem; 
-    color: #fff;
-  
+    font-size: 1.3rem;
 }
 
 .nav-links a:hover {
-    background: linear-gradient(#48d39f, #38a4d3);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
 }
 
 .hamburger {
@@ -97,7 +80,7 @@ nav {
 
 .hamburger div {
     width: 25px;
-    height: 1px;
+    height: 2px;
     margin-bottom: 5px;
     background-color: #fff;
 }
@@ -107,28 +90,39 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    min-height: 60vh;
+    color: #000;
+    min-height: 80vh;
     letter-spacing: 2px;
     font-size: 1.3rem;
-    font-weight: 400;
-    padding: 0.3rem;
-    
+    padding: 0.3rem;    
 }
 
+.banner-title i, .main-intro i,
+.grid-title i, .card-container i {
+    color: #000;
+    font-size: 2.5rem;
+    margin: 2rem auto;
+}
 
 
 main {
     max-width: 90%;
-    margin: 3rem auto;
+    margin: 5rem auto;
     text-align: center;
 }
 
-
+.main-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem auto;
+    padding: 0.5rem;
+    min-height: 100vh;
+}
 
 .main-intro h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
     letter-spacing: 1px;
 }
 
@@ -137,26 +131,48 @@ main {
 }
 
 .card-container {
-    margin: 2rem auto;
-    color: #fff;
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
 }
 
+.ct-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 
-
-.card, .card2 {
+.card{
     margin-bottom: 1.5rem;
-    background: linear-gradient(#48d39f, #38a4d3);
-
+    line-height: 1.5rem;
 }
-.card img, .card2 img {
+.card img {
     margin-bottom: 1rem;
 }
 
-.card h3, .card2 h3 {
-    margin-bottom: 1rem
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem; 
 }
 
 
+
+.grid-title {
+    max-width: 90%;
+    min-height: 100vh;
+    margin: 10rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 .grid-gallery {
@@ -175,26 +191,13 @@ main {
     position: absolute;
     top: 40%;
     left: 50%;
-
-}
-
-.gallery-title {
     color: #fff;
     font-size: 2.8rem;
     padding: 1rem;
     background: linear-gradient(#48d39f, #38a4d3);
     transform: translate(-40%, -50%);
-    border-radius: 15px;
-    text-shadow: 2px 2px #333;
+ 
 }
-
-.grid-title {
-    max-width: 90%;
-    margin: 3rem auto;
-    text-align: center;
-
-}
-
 
 
 
@@ -298,86 +301,4 @@ main {
 
 .email-form input {
     width: 100%;
-}
-
-
-
-
-@media (min-width: 658px) {
-    main {
-        max-width: 70%;
-    }
-
-    .card-container  {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        grid-gap: 1rem;
-    }
-
-    .grid-title {
-        font-size: 1.3rem;
-    }
-
-    .blog {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        max-width: 80%;
-    }
-
-    .blog img {
-        width: 90%;
-    }
-
-    .email-form form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .email-form {
-        flex-direction: row;
-    }
-
-    .email-form h3 {
-        margin-bottom: 3rem;
-    }
-
-        
-
-}
-
-@media (min-width: 958px) {
-    .blog h4 {
-        font-size: 1.4rem;
-    }
-
-    .blog p {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 924px) {
-    .gallery-title {
-        display: none;
-    }
-   
-}
-
-@media (max-width: 500px) {
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .logo {
-        text-align: left;
-        font-size: 0.9rem;
-    }
-
 }
