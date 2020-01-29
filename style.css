@@ -11,6 +11,7 @@ html {
 body {
     color: #333;
     background-color: #fafafa;
+    font-family: 'Cinzel', serif;
     
 }
 
@@ -30,13 +31,15 @@ a {
 
 header {
     background-image: linear-gradient(to right bottom, rgba(0,0,0, 0.6), rgba(0,0,0,0.6)),
-    url(/images/davide-cantelli-jpkfc5_d-DI-unsplash.jpg);
-    background-position: center;
+    url(/images/guy-160411_1280.png);
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 85vh;
+    background-attachment: fixed;
+    min-height: 100vh;
     text-align: center;
     margin-bottom: 3rem;
+    position: relative;
 }
 
 .header-container {
@@ -45,11 +48,18 @@ header {
     align-items: center;
     min-height: 15vh;
     color: #fff;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.banner-title h1 {
+    background: linear-gradient(#48d39f, #38a4d3);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo {
-    flex: 1 1 20rem;
-    margin: auto 2rem;
+    flex: 1 1 25rem;
+    margin-left: 0.3rem;
 }
 
 .logo i {
@@ -57,7 +67,7 @@ header {
 }
 
 nav {
-    flex: 1 1 20rem;
+    flex: 1 1 25rem;
 }
 
 .nav-links {
@@ -66,11 +76,30 @@ nav {
 }
 
 .nav-links a{
+    font-size: 1.3rem; 
     color: #fff;
+  
 }
 
 .nav-links a:hover {
-    color: #ffbb0e; 
+    background: linear-gradient(#48d39f, #38a4d3);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hamburger {
+    position: absolute;
+    top: 4% ;
+    right: 4%;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 1px;
+    margin-bottom: 5px;
+    background-color: #fff;
 }
 
 .banner-title {
@@ -79,8 +108,7 @@ nav {
     justify-content: center;
     align-items: center;
     color: #fff;
-    min-height: 50vh;
-    font-family: 'Cinzel', serif;
+    min-height: 60vh;
     letter-spacing: 2px;
     font-size: 1.3rem;
     font-weight: 400;
@@ -88,46 +116,119 @@ nav {
     
 }
 
+
+
 main {
-    max-width: 60%;
+    max-width: 90%;
     margin: 3rem auto;
     text-align: center;
-    
 }
 
-.card {
-    margin-bottom: 1.5rem;
-   
-    
-}
 
-.card-img {
+
+.main-intro h3 {
+    font-size: 1.4rem;
     margin-bottom: 1rem;
-
+    letter-spacing: 1px;
 }
 
-.card h3 {
-    margin-bottom: 0.5rem;
-    
+.main-intro p {
+    font-size: 1.2rem;
 }
 
-.card2 {
+.card-container {
+    margin: 2rem auto;
+    color: #fff;
+}
+
+
+
+.card, .card2 {
     margin-bottom: 1.5rem;
-}
+    background: linear-gradient(#48d39f, #38a4d3);
 
-.card-img2 {
+}
+.card img, .card2 img {
     margin-bottom: 1rem;
 }
 
-.card2 h3 {
-    margin-bottom: 0.5rem;
+.card h3, .card2 h3 {
+    margin-bottom: 1rem
 }
+
+
+
 
 .grid-gallery {
     max-width: 90%;
     margin: auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0.5rem;
+    position: relative;
 }
+
+
+.gallery-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+}
+
+.gallery-title {
+    color: #fff;
+    font-size: 2.8rem;
+    padding: 1rem;
+    background: linear-gradient(#48d39f, #38a4d3);
+    transform: translate(-40%, -50%);
+    border-radius: 15px;
+    text-shadow: 2px 2px #333;
+}
+
+.grid-title {
+    max-width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+
+}
+
+
+
+
+.img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.img2 {
+    grid-column-start: 1;
+    grid-column-end: 4  ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.img3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+}
+
+
+.img4 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.img5 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
 
 .blog {
     max-width: 90%;
@@ -135,13 +236,59 @@ main {
 
 }
 
+.blog article {
+    background: linear-gradient(#48d39f, #38a4d3);
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.blog article h3 {
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+
+.blog div {
+    margin-bottom: 1rem;
+}
+
+.blog h4 {
+    margin-bottom: .5rem;
+}
+
+.social-media-icon {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+}
+
+.social-media-icon a {
+    color: #38a4d3;
+}
+
+.social-media-icon a:hover {
+    opacity: 0.7;
+}
+
+.social-media-container h3 {
+    margin-bottom: 0.5rem;
+}
+
 .email-form {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/spaghetti-2931846_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    color: #fff;
 }
 
 .email-form label {
@@ -153,14 +300,84 @@ main {
     width: 100%;
 }
 
+
+
+
 @media (min-width: 658px) {
     main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-      
-       
+        max-width: 70%;
     }
 
+    .card-container  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 1rem;
+    }
+
+    .grid-title {
+        font-size: 1.3rem;
+    }
+
+    .blog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .blog img {
+        width: 90%;
+    }
+
+    .email-form form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .email-form {
+        flex-direction: row;
+    }
+
+    .email-form h3 {
+        margin-bottom: 3rem;
+    }
+
+        
+
+}
+
+@media (min-width: 958px) {
+    .blog h4 {
+        font-size: 1.4rem;
+    }
+
+    .blog p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 924px) {
+    .gallery-title {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 500px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo {
+        text-align: left;
+        font-size: 0.9rem;
+    }
 
 }
