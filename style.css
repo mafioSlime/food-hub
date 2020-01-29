@@ -98,7 +98,8 @@ nav {
 }
 
 .banner-title i, .main-intro i,
-.grid-title i, .card-container i {
+.mini-joke i, .card-container i, .grid-container i,
+.blog i {
     color: #000;
     font-size: 2.5rem;
     margin: 2rem auto;
@@ -162,7 +163,7 @@ main {
 
 
 
-.grid-title {
+ .mini-joke {
     max-width: 90%;
     min-height: 100vh;
     margin: 10rem auto;
@@ -174,69 +175,33 @@ main {
 
 }
 
-
-.grid-gallery {
+.grid-container {
     max-width: 90%;
     margin: auto;
     text-align: center;
+}
+
+.grid-gallery {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 0.5rem;
-    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
 }
 
-
-.gallery-title {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    color: #fff;
+.grid-title h3{
     font-size: 2.8rem;
-    padding: 1rem;
-    background: linear-gradient(#48d39f, #38a4d3);
-    transform: translate(-40%, -50%);
- 
-}
-
-
-
-.img {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.img2 {
-    grid-column-start: 1;
-    grid-column-end: 4  ;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.img3 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-}
-
-
-.img4 {
-    grid-column-start: 5;
-    grid-column-end: 7;
-}
-
-.img5 {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    margin-bottom: 2rem;
+    font-weight: lighter;
 }
 
 
 .blog {
     max-width: 90%;
     margin: 3rem auto;
-
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .blog article {
@@ -259,6 +224,9 @@ main {
 .blog h4 {
     margin-bottom: .5rem;
 }
+
+
+
 
 .social-media-icon {
     display: flex;
