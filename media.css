@@ -20,6 +20,8 @@
         justify-content: center;
         grid-gap: 1rem;
     }
+    
+  
 
     
     .grid-title {
@@ -89,15 +91,15 @@
        flex-direction: column;
        justify-content: space-evenly;
        background-color: #38a4d3;
-       /* transform: translateX(100%); */
-       transition: 0.5s ease-in;
+       transition: 0.2s ease-in;
+     
     }
-
 
 
     .hamburger {
         display: block;
-        z-index: 2;
+        z-index: 3;
+        
     }
 
 
@@ -105,6 +107,7 @@
     .logo {
         text-align: left;
         font-size: 0.9rem;
+        z-index: 2;
     }
 
 }
@@ -112,3 +115,15 @@
 .active {
     transform: translateX(-100%);
 }
+
+.toggle .line1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+   
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotateZ(405deg) translate(-8px, -6px)
+    
+  }

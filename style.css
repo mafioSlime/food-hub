@@ -50,8 +50,10 @@ header {
     color: #fff;
 }
 
-.logo i {
+.logo h1 i {
     color: #ffbb0e;
+    animation: none
+    
 }
 
 nav {
@@ -84,8 +86,10 @@ nav {
 .hamburger div {
     width: 25px;
     height: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     background-color: #fff;
+    transition: 0.2s ease-in;
+    
 }
 
 .banner-title {
