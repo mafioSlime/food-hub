@@ -75,15 +75,15 @@ nav {
 
 .hamburger {
     position: absolute;
-    top: 4% ;
-    right: 4%;
+    top: 25% ;
+    right: 5%;
     display: none;
     cursor: pointer;
 }
 
 .hamburger div {
     width: 25px;
-    height: 2px;
+    height: 3px;
     margin-bottom: 5px;
     background-color: #fff;
 }
