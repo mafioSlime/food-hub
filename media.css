@@ -1,8 +1,18 @@
 
 @media (min-width: 658px) {
+    
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    
     main {
         max-width: 90%;
     }
+
+    .main-intro h3 {
+        font-size: 2.3rem;
+    }
+
 
     .main-card  {
         display: grid;
@@ -11,6 +21,7 @@
         grid-gap: 1rem;
     }
 
+    
     .grid-title {
         font-size: 1.3rem;
     }
@@ -41,7 +52,9 @@
         margin-bottom: 3rem;
     }
 
-        
+    .mini-joke p, .main-intro p {
+        font-size: 2.1rem;
+    }
 
 }
 
