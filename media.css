@@ -78,11 +78,11 @@
 }
 
 @media (max-width: 500px) {
-
     .header-container {
         position: relative;
     }
-    .nav-links {
+     .nav-links {
+    
        position: absolute;
        top: 0;
        left: 100%;
