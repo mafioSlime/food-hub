@@ -39,34 +39,22 @@
         width: 90%;
     }
 
-    .email-form form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .email-form {
-        flex-direction: row;
-    }
-
-    .email-form h3 {
-        margin-bottom: 3rem;
-    }
+    
 
     .mini-joke p, .main-intro p {
-        font-size: 2.1rem;
+        font-size: 1.9rem;
     }
 
 }
 
 @media (min-width: 958px) {
     .blog h4 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .blog p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        
     }
 }
 
@@ -109,6 +97,25 @@
         font-size: 0.9rem;
         z-index: 2;
     }
+
+}
+
+@media (min-width: 600px) {
+.email-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.email-form {
+    flex-direction: row;
+}
+
+.email-form h3 {
+    margin-bottom: 3rem;
+}
 
 }
 

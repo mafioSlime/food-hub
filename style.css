@@ -227,7 +227,7 @@ main {
     background: linear-gradient(#48d39f, #38a4d3);
     padding: 1rem;
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 .blog article h3 {
@@ -241,7 +241,7 @@ main {
 }
 
 .blog h4 {
-    margin-bottom: .3rem;
+    margin-bottom: .5rem;
 }
 
 
@@ -276,8 +276,14 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 80vh;
     color: #fff;
+}
+
+
+textarea {
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .email-form label {
@@ -288,6 +294,8 @@ main {
 .email-form input {
     width: 100%;
 }
+
+
 
 .button {
     background-color: #48d39f;
