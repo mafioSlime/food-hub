@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John Jarold | Food Hub</title>
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="mealfinder.css">
+    <script src="https://kit.fontawesome.com/c7414cb6d4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">    
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <div class="logo">
+            <h1>Food Hub <i class="fas fa-hamburger"></i></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+    </header>
+
+    <div class="container">
+        <h1>Meal Finder</h1>
+        <div class="flex">
+          <form class="flex" id="submit">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search for meals or keywords"
+            />
+            <button class="search-btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button class="random-btn" id="random">
+            <i class="fas fa-random"></i>
+          </button>
+        </div>
+  
+        <div id="result-heading"></div>
+        <div id="meals" class="meals"></div>
+        <div id="single-meal"></div>
+      </div>
+
+
+
+    <!-- <script src="app.js"></script> -->
+    <script src="mealfinder.js"></script>
+    </body>
+    </html>
