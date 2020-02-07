@@ -34,6 +34,10 @@ header {
     text-align: center;
     margin-bottom: 3rem;
     position: relative;
+    background-image: url('images/jonathan-borba-8l8Yl2ruUsg-unsplash.jpg');
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-container {
@@ -41,7 +45,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     min-height: 15vh;
-    background-color: #38a4d3;  
+    background-color: #CD3333;  
 }
 
 .logo {
@@ -67,6 +71,7 @@ nav {
 
 .nav-links a{
     font-size: 1.3rem;
+    color: #ffe200;
     
 }
 
@@ -97,7 +102,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #000;
+    color: #fff;
     min-height: 100vh;
     letter-spacing: 2px;
     font-size: 1.3rem;
